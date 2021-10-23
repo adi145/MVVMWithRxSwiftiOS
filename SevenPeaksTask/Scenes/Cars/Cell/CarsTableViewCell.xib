@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarsTableViewCell" id="KGk-i7-Jjw" customClass="CarsTableViewCell" customModule="CarDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="390"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="390"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GqR-6Q-BCi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="310"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oo2-gO-dcI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="310"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Onk-Ga-Ghq" customClass="GradientLayer" customModule="CarDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="281" width="320" height="29"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pig-by-QNh">
+                                        <rect key="frame" x="16" y="0.0" width="288" height="29"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Pig-by-QNh" secondAttribute="bottom" id="AP0-m5-y3H"/>
+                                    <constraint firstItem="Pig-by-QNh" firstAttribute="leading" secondItem="Onk-Ga-Ghq" secondAttribute="leading" constant="16" id="MUe-Vn-PYx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pig-by-QNh" secondAttribute="trailing" constant="16" id="ggb-YS-Q8O"/>
+                                    <constraint firstItem="Pig-by-QNh" firstAttribute="top" secondItem="Onk-Ga-Ghq" secondAttribute="top" id="o1w-u3-YaE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Onk-Ga-Ghq" firstAttribute="leading" secondItem="GqR-6Q-BCi" secondAttribute="leading" id="1nI-tp-28S"/>
+                            <constraint firstAttribute="bottom" secondItem="oo2-gO-dcI" secondAttribute="bottom" id="6h8-lB-0sh"/>
+                            <constraint firstAttribute="bottom" secondItem="Onk-Ga-Ghq" secondAttribute="bottom" id="B1V-53-hSM"/>
+                            <constraint firstAttribute="height" constant="310" id="MFt-tl-noC"/>
+                            <constraint firstItem="oo2-gO-dcI" firstAttribute="top" secondItem="GqR-6Q-BCi" secondAttribute="top" id="UE0-k5-Q5B"/>
+                            <constraint firstAttribute="trailing" secondItem="oo2-gO-dcI" secondAttribute="trailing" id="c2r-lv-GLP"/>
+                            <constraint firstItem="oo2-gO-dcI" firstAttribute="leading" secondItem="GqR-6Q-BCi" secondAttribute="leading" id="jCX-wj-R4o"/>
+                            <constraint firstAttribute="trailing" secondItem="Onk-Ga-Ghq" secondAttribute="trailing" id="kQi-3H-btI"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMq-o0-zpc">
+                        <rect key="frame" x="16" y="316" width="288" height="23"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                        <color key="textColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWa-sX-voh">
+                        <rect key="frame" x="16" y="357" width="288" height="17"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="SWa-sX-voh" secondAttribute="trailing" constant="16" id="0V7-xN-JmQ"/>
+                    <constraint firstItem="KMq-o0-zpc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="4Sm-Wg-yrR"/>
+                    <constraint firstItem="SWa-sX-voh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="9S6-gP-ICZ"/>
+                    <constraint firstItem="SWa-sX-voh" firstAttribute="top" secondItem="KMq-o0-zpc" secondAttribute="bottom" constant="18" id="CLR-9S-afz"/>
+                    <constraint firstAttribute="trailing" secondItem="KMq-o0-zpc" secondAttribute="trailing" constant="16" id="JcX-m9-H5K"/>
+                    <constraint firstItem="KMq-o0-zpc" firstAttribute="top" secondItem="GqR-6Q-BCi" secondAttribute="bottom" constant="6" id="Wkv-06-zR8"/>
+                    <constraint firstAttribute="trailing" secondItem="GqR-6Q-BCi" secondAttribute="trailing" id="bWT-W4-dh2"/>
+                    <constraint firstItem="GqR-6Q-BCi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="csf-Lf-l8s"/>
+                    <constraint firstAttribute="bottom" secondItem="SWa-sX-voh" secondAttribute="bottom" constant="16" id="nSU-Jg-3tY"/>
+                    <constraint firstItem="GqR-6Q-BCi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yoU-PZ-cOW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="GqR-6Q-BCi" id="Wjj-L7-Kei"/>
+                <outlet property="carImageView" destination="oo2-gO-dcI" id="xiY-yv-xp7"/>
+                <outlet property="dateLabel" destination="KMq-o0-zpc" id="0xL-qF-Hp7"/>
+                <outlet property="ingressLabel" destination="SWa-sX-voh" id="mDs-Mf-mdc"/>
+                <outlet property="titleLabel" destination="Pig-by-QNh" id="6BJ-Al-nH4"/>
+                <outlet property="transparentView" destination="Onk-Ga-Ghq" id="E6j-HS-dj4"/>
+            </connections>
+            <point key="canvasLocation" x="-207.24637681159422" y="-19.084821428571427"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

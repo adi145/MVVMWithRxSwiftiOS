@@ -3,33 +3,96 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		74071A822723E0B500799849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071A812723E0B500799849 /* AppDelegate.swift */; };
 		74071A842723E0B500799849 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071A832723E0B500799849 /* SceneDelegate.swift */; };
-		74071A862723E0B500799849 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071A852723E0B500799849 /* ViewController.swift */; };
 		74071A892723E0B500799849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74071A872723E0B500799849 /* Main.storyboard */; };
 		74071A8C2723E0B500799849 /* SevenPeaksTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74071A8A2723E0B500799849 /* SevenPeaksTask.xcdatamodeld */; };
 		74071A8E2723E0B700799849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74071A8D2723E0B700799849 /* Assets.xcassets */; };
 		74071A912723E0B700799849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74071A8F2723E0B700799849 /* LaunchScreen.storyboard */; };
+		74071AA52723E10100799849 /* SevenPeaksTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071AA42723E10100799849 /* SevenPeaksTaskTests.swift */; };
+		74071AAF2723E15D00799849 /* CarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071AAE2723E15D00799849 /* CarsViewController.swift */; };
+		74071AB42723E19600799849 /* CarsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071AB22723E19600799849 /* CarsTableViewCell.swift */; };
+		74071AB52723E19600799849 /* CarsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74071AB32723E19600799849 /* CarsTableViewCell.xib */; };
+		74071ABA2723E1BB00799849 /* ApiRequestEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071AB92723E1BB00799849 /* ApiRequestEndpoints.swift */; };
+		74071ABF2723E1E800799849 /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071ABE2723E1E800799849 /* GradientLayer.swift */; };
+		74071AC62723E21700799849 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071AC52723E21700799849 /* Extension.swift */; };
+		74071ACE2723E24200799849 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74071ACC2723E24100799849 /* SF-UI-Display-Medium.otf */; };
+		74071ACF2723E24200799849 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74071ACD2723E24200799849 /* SF-UI-Display-Regular.otf */; };
+		74071AD82723E3B000799849 /* CarsDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071AD72723E3B000799849 /* CarsDateFormatter.swift */; };
+		74071ADF2723E3E000799849 /* CarDetailsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071ADE2723E3E000799849 /* CarDetailsHelper.swift */; };
+		74071AE52723E40B00799849 /* CarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071AE42723E40B00799849 /* CarsViewModel.swift */; };
+		74071AEA2723E48300799849 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 74071AE92723E48300799849 /* Kingfisher */; };
+		74071AEF2723E4AE00799849 /* NetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = 74071AEE2723E4AE00799849 /* NetworkManager */; };
+		74071AF42723E4D700799849 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 74071AF32723E4D700799849 /* RxCocoa */; };
+		74071AF62723E4D700799849 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 74071AF52723E4D700799849 /* RxSwift */; };
+		74071AFA2723E53500799849 /* CarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071AF92723E53500799849 /* CarsModel.swift */; };
+		74071AFE2723E67400799849 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071AFD2723E67400799849 /* Constants.swift */; };
+		74071B092723E99C00799849 /* Cars.json in Resources */ = {isa = PBXBuildFile; fileRef = 74071B042723E99C00799849 /* Cars.json */; };
+		74071B0A2723E99C00799849 /* MockApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071B052723E99C00799849 /* MockApiManager.swift */; };
+		74071B0B2723E99C00799849 /* CarsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071B062723E99C00799849 /* CarsData.swift */; };
+		74071B0C2723E99C00799849 /* CarViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071B072723E99C00799849 /* CarViewControllerTests.swift */; };
+		74071B0D2723E99C00799849 /* CarsViewModeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74071B082723E99C00799849 /* CarsViewModeTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74071AA72723E10100799849 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74071A762723E0B500799849 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74071A7D2723E0B500799849;
+			remoteInfo = SevenPeaksTask;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		74071A7E2723E0B500799849 /* SevenPeaksTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SevenPeaksTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74071A812723E0B500799849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74071A832723E0B500799849 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74071A852723E0B500799849 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74071A882723E0B500799849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74071A8B2723E0B500799849 /* SevenPeaksTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SevenPeaksTask.xcdatamodel; sourceTree = "<group>"; };
 		74071A8D2723E0B700799849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74071A902723E0B700799849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74071A922723E0B700799849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74071AA22723E10100799849 /* SevenPeaksTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SevenPeaksTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74071AA42723E10100799849 /* SevenPeaksTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenPeaksTaskTests.swift; sourceTree = "<group>"; };
+		74071AA62723E10100799849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74071AAE2723E15D00799849 /* CarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewController.swift; sourceTree = "<group>"; };
+		74071AB22723E19600799849 /* CarsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTableViewCell.swift; sourceTree = "<group>"; };
+		74071AB32723E19600799849 /* CarsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsTableViewCell.xib; sourceTree = "<group>"; };
+		74071AB92723E1BB00799849 /* ApiRequestEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestEndpoints.swift; sourceTree = "<group>"; };
+		74071ABE2723E1E800799849 /* GradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLayer.swift; sourceTree = "<group>"; };
+		74071AC52723E21700799849 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		74071ACC2723E24100799849 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
+		74071ACD2723E24200799849 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
+		74071AD72723E3B000799849 /* CarsDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsDateFormatter.swift; sourceTree = "<group>"; };
+		74071ADE2723E3E000799849 /* CarDetailsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsHelper.swift; sourceTree = "<group>"; };
+		74071AE42723E40B00799849 /* CarsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewModel.swift; sourceTree = "<group>"; };
+		74071AF92723E53500799849 /* CarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsModel.swift; sourceTree = "<group>"; };
+		74071AFD2723E67400799849 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		74071B042723E99C00799849 /* Cars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cars.json; sourceTree = "<group>"; };
+		74071B052723E99C00799849 /* MockApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockApiManager.swift; sourceTree = "<group>"; };
+		74071B062723E99C00799849 /* CarsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsData.swift; sourceTree = "<group>"; };
+		74071B072723E99C00799849 /* CarViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarViewControllerTests.swift; sourceTree = "<group>"; };
+		74071B082723E99C00799849 /* CarsViewModeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsViewModeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		74071A7B2723E0B500799849 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74071AF42723E4D700799849 /* RxCocoa in Frameworks */,
+				74071AEA2723E48300799849 /* Kingfisher in Frameworks */,
+				74071AF62723E4D700799849 /* RxSwift in Frameworks */,
+				74071AEF2723E4AE00799849 /* NetworkManager in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74071A9F2723E10100799849 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				74071A802723E0B500799849 /* SevenPeaksTask */,
+				74071AA32723E10100799849 /* SevenPeaksTaskTests */,
 				74071A7F2723E0B500799849 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				74071A7E2723E0B500799849 /* SevenPeaksTask.app */,
+				74071AA22723E10100799849 /* SevenPeaksTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,9 +123,15 @@
 		74071A802723E0B500799849 /* SevenPeaksTask */ = {
 			isa = PBXGroup;
 			children = (
+				74071ADD2723E3D200799849 /* Coredata */,
+				74071AD62723E3A000799849 /* Constants */,
+				74071ACB2723E22E00799849 /* Fonts */,
+				74071AC42723E1FF00799849 /* Extensions */,
+				74071ABD2723E1DB00799849 /* CustomView */,
+				74071AB82723E1AC00799849 /* Network */,
+				74071A992723E0C000799849 /* Scenes */,
 				74071A812723E0B500799849 /* AppDelegate.swift */,
 				74071A832723E0B500799849 /* SceneDelegate.swift */,
-				74071A852723E0B500799849 /* ViewController.swift */,
 				74071A872723E0B500799849 /* Main.storyboard */,
 				74071A8D2723E0B700799849 /* Assets.xcassets */,
 				74071A8F2723E0B700799849 /* LaunchScreen.storyboard */,
@@ -68,6 +139,122 @@
 				74071A8A2723E0B500799849 /* SevenPeaksTask.xcdatamodeld */,
 			);
 			path = SevenPeaksTask;
+			sourceTree = "<group>";
+		};
+		74071A992723E0C000799849 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				74071A9A2723E0CB00799849 /* Cars */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		74071A9A2723E0CB00799849 /* Cars */ = {
+			isa = PBXGroup;
+			children = (
+				74071A9D2723E0E400799849 /* ViewModel */,
+				74071A9C2723E0DD00799849 /* Cell */,
+				74071A9B2723E0D600799849 /* Model */,
+				74071AAE2723E15D00799849 /* CarsViewController.swift */,
+			);
+			path = Cars;
+			sourceTree = "<group>";
+		};
+		74071A9B2723E0D600799849 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74071AF92723E53500799849 /* CarsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74071A9C2723E0DD00799849 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				74071AB22723E19600799849 /* CarsTableViewCell.swift */,
+				74071AB32723E19600799849 /* CarsTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		74071A9D2723E0E400799849 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				74071AE42723E40B00799849 /* CarsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		74071AA32723E10100799849 /* SevenPeaksTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				74071B032723E99C00799849 /* Cars */,
+				74071AA42723E10100799849 /* SevenPeaksTaskTests.swift */,
+				74071AA62723E10100799849 /* Info.plist */,
+			);
+			path = SevenPeaksTaskTests;
+			sourceTree = "<group>";
+		};
+		74071AB82723E1AC00799849 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				74071AB92723E1BB00799849 /* ApiRequestEndpoints.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		74071ABD2723E1DB00799849 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				74071ABE2723E1E800799849 /* GradientLayer.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		74071AC42723E1FF00799849 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74071AC52723E21700799849 /* Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		74071ACB2723E22E00799849 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				74071ACC2723E24100799849 /* SF-UI-Display-Medium.otf */,
+				74071ACD2723E24200799849 /* SF-UI-Display-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		74071AD62723E3A000799849 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				74071AD72723E3B000799849 /* CarsDateFormatter.swift */,
+				74071AFD2723E67400799849 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		74071ADD2723E3D200799849 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				74071ADE2723E3E000799849 /* CarDetailsHelper.swift */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
+		74071B032723E99C00799849 /* Cars */ = {
+			isa = PBXGroup;
+			children = (
+				74071B042723E99C00799849 /* Cars.json */,
+				74071B052723E99C00799849 /* MockApiManager.swift */,
+				74071B062723E99C00799849 /* CarsData.swift */,
+				74071B072723E99C00799849 /* CarViewControllerTests.swift */,
+				74071B082723E99C00799849 /* CarsViewModeTests.swift */,
+			);
+			path = Cars;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +273,33 @@
 			dependencies = (
 			);
 			name = SevenPeaksTask;
+			packageProductDependencies = (
+				74071AE92723E48300799849 /* Kingfisher */,
+				74071AEE2723E4AE00799849 /* NetworkManager */,
+				74071AF32723E4D700799849 /* RxCocoa */,
+				74071AF52723E4D700799849 /* RxSwift */,
+			);
 			productName = SevenPeaksTask;
 			productReference = 74071A7E2723E0B500799849 /* SevenPeaksTask.app */;
 			productType = "com.apple.product-type.application";
+		};
+		74071AA12723E10100799849 /* SevenPeaksTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74071AA92723E10100799849 /* Build configuration list for PBXNativeTarget "SevenPeaksTaskTests" */;
+			buildPhases = (
+				74071A9E2723E10100799849 /* Sources */,
+				74071A9F2723E10100799849 /* Frameworks */,
+				74071AA02723E10100799849 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74071AA82723E10100799849 /* PBXTargetDependency */,
+			);
+			name = SevenPeaksTaskTests;
+			productName = SevenPeaksTaskTests;
+			productReference = 74071AA22723E10100799849 /* SevenPeaksTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -102,6 +313,10 @@
 					74071A7D2723E0B500799849 = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					74071AA12723E10100799849 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 74071A7D2723E0B500799849;
+					};
 				};
 			};
 			buildConfigurationList = 74071A792723E0B500799849 /* Build configuration list for PBXProject "SevenPeaksTask" */;
@@ -113,11 +328,17 @@
 				Base,
 			);
 			mainGroup = 74071A752723E0B500799849;
+			packageReferences = (
+				74071AE82723E48300799849 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				74071AED2723E4AE00799849 /* XCRemoteSwiftPackageReference "NetworkManager" */,
+				74071AF22723E4D600799849 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 74071A7F2723E0B500799849 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				74071A7D2723E0B500799849 /* SevenPeaksTask */,
+				74071AA12723E10100799849 /* SevenPeaksTaskTests */,
 			);
 		};
 /* End PBXProject section */
@@ -129,7 +350,18 @@
 			files = (
 				74071A912723E0B700799849 /* LaunchScreen.storyboard in Resources */,
 				74071A8E2723E0B700799849 /* Assets.xcassets in Resources */,
+				74071ACF2723E24200799849 /* SF-UI-Display-Regular.otf in Resources */,
+				74071ACE2723E24200799849 /* SF-UI-Display-Medium.otf in Resources */,
+				74071AB52723E19600799849 /* CarsTableViewCell.xib in Resources */,
 				74071A892723E0B500799849 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74071AA02723E10100799849 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74071B092723E99C00799849 /* Cars.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,14 +372,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74071A862723E0B500799849 /* ViewController.swift in Sources */,
+				74071AFA2723E53500799849 /* CarsModel.swift in Sources */,
+				74071AC62723E21700799849 /* Extension.swift in Sources */,
+				74071ABF2723E1E800799849 /* GradientLayer.swift in Sources */,
 				74071A822723E0B500799849 /* AppDelegate.swift in Sources */,
+				74071AB42723E19600799849 /* CarsTableViewCell.swift in Sources */,
+				74071AE52723E40B00799849 /* CarsViewModel.swift in Sources */,
+				74071AAF2723E15D00799849 /* CarsViewController.swift in Sources */,
+				74071AFE2723E67400799849 /* Constants.swift in Sources */,
+				74071AD82723E3B000799849 /* CarsDateFormatter.swift in Sources */,
 				74071A842723E0B500799849 /* SceneDelegate.swift in Sources */,
+				74071ADF2723E3E000799849 /* CarDetailsHelper.swift in Sources */,
+				74071ABA2723E1BB00799849 /* ApiRequestEndpoints.swift in Sources */,
 				74071A8C2723E0B500799849 /* SevenPeaksTask.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74071A9E2723E10100799849 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74071B0A2723E99C00799849 /* MockApiManager.swift in Sources */,
+				74071B0D2723E99C00799849 /* CarsViewModeTests.swift in Sources */,
+				74071B0B2723E99C00799849 /* CarsData.swift in Sources */,
+				74071AA52723E10100799849 /* SevenPeaksTaskTests.swift in Sources */,
+				74071B0C2723E99C00799849 /* CarViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74071AA82723E10100799849 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74071A7D2723E0B500799849 /* SevenPeaksTask */;
+			targetProxy = 74071AA72723E10100799849 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		74071A872723E0B500799849 /* Main.storyboard */ = {
@@ -292,6 +553,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SevenPeaksTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +572,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SevenPeaksTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,6 +581,44 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		74071AAA2723E10100799849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SevenPeaksTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lineman.SevenPeaksTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SevenPeaksTask.app/SevenPeaksTask";
+			};
+			name = Debug;
+		};
+		74071AAB2723E10100799849 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SevenPeaksTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lineman.SevenPeaksTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SevenPeaksTask.app/SevenPeaksTask";
 			};
 			name = Release;
 		};
@@ -342,7 +643,66 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		74071AA92723E10100799849 /* Build configuration list for PBXNativeTarget "SevenPeaksTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74071AAA2723E10100799849 /* Debug */,
+				74071AAB2723E10100799849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74071AE82723E48300799849 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+		74071AED2723E4AE00799849 /* XCRemoteSwiftPackageReference "NetworkManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adi145/NetworkManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+		74071AF22723E4D600799849 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74071AE92723E48300799849 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74071AE82723E48300799849 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		74071AEE2723E4AE00799849 /* NetworkManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74071AED2723E4AE00799849 /* XCRemoteSwiftPackageReference "NetworkManager" */;
+			productName = NetworkManager;
+		};
+		74071AF32723E4D700799849 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74071AF22723E4D600799849 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		74071AF52723E4D700799849 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74071AF22723E4D600799849 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		74071A8A2723E0B500799849 /* SevenPeaksTask.xcdatamodeld */ = {
